@@ -5,7 +5,7 @@
       <div class="classify-right">共 <span class="text">{{ count }}</span> 个</div>
     </div>
     <div class="classify-label-box">
-      <div style="display: inline-block;" v-for="(index, item) in 2" :key="index" >
+      <div v-for="(index, item) in 12" :key="index" style="display: inline-block;">
         <a href="">
           <div class="classify-label">
             <span class="span-left">java</span>
@@ -61,8 +61,7 @@ export default {
 }
 
 .classify-label-box {
-  /*margin: 10px 0 10px 10px;*/
-  width: 600px;
+  margin: 10px 0 10px 10px;
 }
 
 .classify-label {
