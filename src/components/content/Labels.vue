@@ -5,17 +5,16 @@
       <div class="classify-right">共 <span class="text">{{ count }}</span> 个</div>
     </div>
     <div class="classify-label-box">
-      <div v-for="(index, item) in 9" :key="index">
+      <div style="display: inline-block;" v-for="(index, item) in 2" :key="index" >
         <a href="">
           <div class="classify-label">
-            <div class="span-left">java</div>
-            <div class="span-right">2</div>
+            <span class="span-left">java</span>
+            <span class="span-right">2</span>
           </div>
         </a>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -62,15 +61,14 @@ export default {
 }
 
 .classify-label-box {
-  margin: 10px 0 10px 10px;
-  width: 800px;
-  border: 1px solid black;
+  /*margin: 10px 0 10px 10px;*/
+  width: 600px;
 }
 
 .classify-label {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  /*display: inline-flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
   margin: 5px;
   height: 50px;
   width: 150px;
@@ -82,16 +80,21 @@ export default {
   height: 100%;
   color: #00000089;
   line-height: 45px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 .span-left {
-  margin: 0 5px 0 5px;
+  display: inline-block;
+  width: 73px;
+  text-align: center;
 }
 
 .span-right {
-  padding: 0 10px 0 10px;
+  display: inline-block;
+  /*padding: 0 10px 0 10px;*/
   border-left: 1px solid #3333;
+  width: 50%;
+  text-align: center;
 }
 </style>
