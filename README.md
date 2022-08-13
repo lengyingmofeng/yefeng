@@ -1,4 +1,6 @@
-# front_master
+# 叶枫个人博客
+
+本项目全部由个人手写
 
 ## Project setup
 ```
